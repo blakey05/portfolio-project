@@ -54,3 +54,14 @@ a {
 a:hover {
     color: #FFA733; /* Slightly lighter Orange for hover effect */
 }
+
+.image-container {
+    position: absolute;
+    right: 20px; /* Space from the right edge */
+    top: calc(100px + 20px); /* Space from the bottom of the navbar (navbar height + padding) */
+}
+
+.image-container img {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
