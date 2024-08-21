@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #F5F5F5; /* Light Grey Background */
+    color: #0A1128; /* Navy Text */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbars */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0A1128; /* Navy for Headings */
+}
+
+a {
+    color: #FF6F00; /* Orange Accent for Links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFA733; /* Slightly lighter Orange for hover effect */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0A1128; /* Navy background for the Navbar */
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #F5F5F5;
+}
+
+/* Link Styles */
+.navbar-right a {
+    font-family: 'Montserrat', sans-serif;
+    color: #F5F5F5; /* Light Grey text on the button */
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #FF6F00; /* Orange background for the button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-right a:hover {
+    background-color: #FFA733; /* Lighter Orange for hover effect */
+}
+
+/* Centered Heading Style */
+.contact-heading {
+    text-align: center;
+    margin-top: 40px; /* Adjust the top margin as needed */
+    font-size: 2em; /* Adjust the font size as needed */
+}
+
+/* Contact Page Styles */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full height of the viewport */
+    background-color: #F5F5F5; /* Light Grey Background */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center align the icons horizontally */
+    gap: 20px; /* Space between the icons */
+}
+
+.social-media ion-icon {
+    font-size: 60px; /* Size of the icons */
+    color: #0A1128; /* Navy color for the icons */
+    transition: color 0.3s ease;
+}
+
+.social-media ion-icon:hover {
+    color: #FF6F00; /* Orange color on hover */
+}
