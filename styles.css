@@ -4,6 +4,7 @@ body {
     color: #0A1128; /* Navy Text */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbars */
 }
 
 h1, h2, h3 {
@@ -58,17 +59,19 @@ a:hover {
 /* Content Layout */
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align content to the left */
     align-items: flex-start;
-    padding: 40px 20px;
+    padding: 40px 20px; /* Adjust the padding around the container */
 }
 
 .content {
-    flex: 1;
+    margin-left: 20px; /* Space between text and left edge of the container */
+    margin-right: 250px; /* Space between text and right edge of the container to accommodate image */
+    max-width: 800px; /* Set a max-width for better alignment */
 }
 
 .about-me, .projects, .skills {
-    max-width: 600px; /* Set a max-width to align the content nicely */
+    max-width: 100%; /* Ensure sections do not exceed container width */
     margin-bottom: 40px; /* Space between sections */
 }
 
@@ -79,15 +82,36 @@ a:hover {
 
 /* Image Styles */
 .image-container {
-    position: fixed;
-    right: 20px;
-    top: 130px;
-    max-width: 300px; /* Adjust size as needed */
-    max-height: 400px; /* Adjust size as needed */
+    right: 20px; /* Adjust this value to move the image closer to or further from the right edge */
+    top: 150px; /* Adjust this value to move the image up or down */
+    max-width: 250px; /* Ensure the image doesn't exceed this width */
+    max-height: 300px; /* Ensure the image doesn't exceed this height */
+    z-index: 1000; /* Ensures the image stays on top of other elements */
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: add rounded corners */
+    border-radius: 8px;
+    display: block; /* Ensures no extra space below the image */
+}
+
+/* Project Link Styles */
+.project-link {
+    text-decoration: none;
+    color: #FF6F00; /* Orange color for the link text */
+}
+
+.project-link h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.project-link:hover {
+    color: #FFA733; /* Lighter Orange for hover effect */
+}
+
+.project-link:hover h3 {
+    color: #FFA733; /* Ensure the heading color changes on hover */
 }
