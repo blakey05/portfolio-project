@@ -119,17 +119,21 @@ a:hover {
 /* Container for project items */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
     gap: 20px; /* Space between project items */
 }
 
 /* Styles for individual project items */
 .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content vertically */
     border: 1px solid #ddd; /* Optional: Border for better visibility */
     border-radius: 8px; /* Rounded corners for the container */
     overflow: hidden; /* Ensures that images do not overflow */
     background-color: #FFF; /* White background for the project item */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a subtle 3D effect */
+    min-height: 300px; /* Ensure a minimum height to fit content */
 }
 
 /* Styles for project images */
@@ -143,6 +147,7 @@ a:hover {
 /* Styles for project description */
 .project-description {
     padding: 20px; /* Space around the description */
+    flex: 1; /* Allows the description to grow and fill available space */
 }
 
 .project-description h3 {
