@@ -159,3 +159,8 @@ a:hover {
     font-size: 1em; /* Adjust font size for paragraphs */
     line-height: 1.6; /* Improve readability */
 }
+
+ion-icon {
+    color: #0A1128; /* Navy color for the icons */
+    font-size: 60px; /* Adjust the size of the icons */
+}
