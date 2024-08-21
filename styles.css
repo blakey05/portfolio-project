@@ -90,7 +90,7 @@ a:hover {
 }
 
 .image-container img {
-    width: 100%;
+    width: 120%;
     height: auto;
     border-radius: 8px;
     display: block; /* Ensures no extra space below the image */
@@ -98,8 +98,8 @@ a:hover {
 
 /* Project Link Styles */
 .project-link {
-    text-decoration: none;
-    color: #FF6F00; /* Orange color for the link text */
+    text-decoration: underline;
+    color: #0A1128; /* Navy color for the link text */
 }
 
 .project-link h3 {
@@ -114,4 +114,43 @@ a:hover {
 
 .project-link:hover h3 {
     color: #FFA733; /* Ensure the heading color changes on hover */
+}
+
+/* Container for project items */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between project items */
+}
+
+/* Styles for individual project items */
+.project-item {
+    border: 1px solid #ddd; /* Optional: Border for better visibility */
+    border-radius: 8px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures that images do not overflow */
+    background-color: #FFF; /* White background for the project item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a subtle 3D effect */
+}
+
+/* Styles for project images */
+.project-item img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    border-bottom: 1px solid #ddd; /* Optional: Border between image and description */
+}
+
+/* Styles for project description */
+.project-description {
+    padding: 20px; /* Space around the description */
+}
+
+.project-description h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Adjust font size for headings */
+}
+
+.project-description p {
+    font-size: 1em; /* Adjust font size for paragraphs */
+    line-height: 1.6; /* Improve readability */
 }
