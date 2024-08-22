@@ -180,3 +180,36 @@ ion-icon {
     from { border-color: transparent; }
     to { border-color: #0A1128; }
 }
+
+/* Default light mode styles are already in place */
+
+body.dark-mode {
+    background-color: #404347; /* Navy Background for Dark Mode */
+    color: #101010; /* Light Grey Text for Dark Mode */
+}
+
+.navbar.dark-mode {
+    background-color: #101010; /* Light Grey Background for Dark Mode Navbar */
+}
+
+.navbar-right a.dark-mode {
+    color: #F5F5F5; /* Navy Text for Dark Mode Navbar Links */
+    background-color: #FF6F00; /* Orange Background for Dark Mode Links */
+}
+
+.dark-mode .logo {
+    color: #0A1128; /* Navy Text for the Logo in Dark Mode */
+}
+
+.dark-mode a {
+    color: #101010; /* Orange Links in Dark Mode */
+}
+
+/* Additional dark mode styles for other elements can be added here */
+.dark-mode .about-me h2, .projects h2, .skills h2 {
+    color: #101010;
+}
+
+.dark-mode ion-icon {
+    color: #101010;
+}

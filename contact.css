@@ -89,3 +89,64 @@ a:hover {
 .social-media ion-icon:hover {
     color: #FF6F00; /* Orange color on hover */
 }
+
+#typewriter {
+    font-family: 'Montserrat', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5F5F5; /* Default text color */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #F5F5F5; /* Blinking cursor */
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: #0A1128; }
+}
+
+/* Default light mode styles are already in place */
+
+body.dark-mode {
+    background-color: #404347; /* Grey Background for Dark Mode */
+    color: #101010; /* Dark Text for Dark Mode */
+}
+
+.navbar.dark-mode {
+    background-color: #101010; /* Dark Background for Dark Mode Navbar */
+}
+
+.navbar-right a.dark-mode {
+    color: #F5F5F5; /* White Text for Dark Mode Navbar Links */
+    background-color: #FF6F00; /* Orange Background for Dark Mode Links */
+}
+
+.dark-mode .logo {
+    color: #0A1128; /* Navy Text for the Logo in Dark Mode */
+}
+
+.dark-mode a {
+    color: #101010; /* Dark Links in Dark Mode */
+}
+
+/* Additional dark mode styles for other elements can be added here */
+.dark-mode .about-me h2, .projects h2, .skills h2 {
+    color: #101010;
+}
+
+.dark-mode ion-icon {
+    color: #101010;
+}
+
+.dark-mode .contact-heading {
+    color: #101010;
+}
+
+.dark-mode .contact-content {
+    background-color:  #404347;
+}
+
+.dark-mode .social-media {
+    background-color: #404347;
+}
