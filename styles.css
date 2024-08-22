@@ -213,3 +213,116 @@ body.dark-mode {
 .dark-mode ion-icon {
     color: #101010;
 }
+
+/* Base styles for small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navbar-left, .navbar-right {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .navbar-right a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .image-container {
+        display: none; /* Hide image on very small screens */
+    }
+
+    ion-icon {
+        font-size: 40px; /* Smaller icon size on mobile */
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .navbar-left, .navbar-right {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .navbar-right a {
+        margin: 0;
+    }
+
+    .content {
+        margin-right: 20px; /* Slight adjustment for tablets */
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+
+    .image-container {
+        max-width: 200px; /* Adjust image size for tablets */
+        max-height: 250px;
+        right: 10px; /* Adjust position */
+        margin-right: 50px;
+    }
+
+    .image-container img {
+        width: 150%; /* Make the image fill the width of the container */
+        height: auto; /* Maintain the aspect ratio of the image */
+        border-radius: 8px; /* Rounded corners */
+        display: block; /* Ensure no extra space below the image */
+    }
+
+    ion-icon {
+        font-size: 50px; /* Medium icon size for tablets */
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .content {
+        margin-right: 250px; /* Space for image on larger screens */
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+
+    .image-container {
+        max-width: 250px; /* Default size for larger screens */
+        max-height: 300px;
+        right: 20px;
+        margin-right: 100px;
+    }
+
+    .image-container img {
+        width: 200%; /* Make the image fill the width of the container */
+        height: auto; /* Maintain the aspect ratio of the image */
+        border-radius: 8px; /* Rounded corners */
+        display: block; /* Ensure no extra space below the image */
+    }
+
+    ion-icon {
+        font-size: 60px; /* Default icon size */
+    }
+}
