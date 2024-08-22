@@ -164,3 +164,19 @@ ion-icon {
     color: #0A1128; /* Navy color for the icons */
     font-size: 60px; /* Adjust the size of the icons */
 }
+
+#typewriter {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5F5F5; /* Default text color */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #F5F5F5; /* Blinking cursor */
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: #0A1128; }
+}
