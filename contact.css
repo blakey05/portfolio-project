@@ -150,3 +150,36 @@ body.dark-mode {
 .dark-mode .social-media {
     background-color: #404347;
 }
+
+/* For screens up to 1536px */
+@media (max-width: 1536px) {
+    .content {
+        margin-right: 220px; /* Decrease space to bring text and image closer */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .image-container {
+        max-width: 220px; /* Reduce max-width of the image */
+        max-height: 270px; /* Reduce max-height of the image */
+        right: 20px; /* Adjust position if needed */
+    }
+
+    .image-container img {
+        width: 110%; /* Slightly reduce image size */
+    }
+}
+
+/* For screens up to 1280px */
+@media (max-width: 1280px) {}
+
+/* For screens up to 1024px */
+@media (max-width: 1024px) {}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {}
+
+/* For screens up to 640px */
+@media (max-width: 640px) {}
+
+/* For screens up to 475px */
+@media (max-width: 475px) {}
